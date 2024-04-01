@@ -1,0 +1,26 @@
+.Calculator{
+    -fx-background-color: linear-gradient(to bottom right, #6f1c92, #d39aec);
+    -fx-background-radius: 20;
+}
+
+.Polynomials{
+    -fx-background-color: #f0dcf8;
+    -fx-background-radius: 15;
+    -fx-text-alignment: center;
+    -fx-font-size: 18;
+    -fx-font-style: normal;
+    -fx-font-family: "Book Antiqua";
+    -fx-border-radius: 15;
+}
+
+.Title{
+    -fx-font-size: 40;
+    -fx-font-style: italic;
+    -fx-font-family: "Script MT Bold";
+    -fx-progress-color: #af1daf;
+}
+
+.Operations{
+    -fx-background-color: linear-gradient(to bottom right, #af1daf, #d39aec);
+    -fx-background-radius: 20;
+}

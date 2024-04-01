@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="Calculator" stylesheets="@WindowStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.GraphicalUserInterface.WindowController">
+   <children>
+      <ImageView fx:id="closeBtn" fitHeight="72.0" fitWidth="90.0" layoutX="614.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../close.png" />
+         </image></ImageView>
+      <TextField fx:id="polynomial1" layoutX="24.0" layoutY="22.0" prefHeight="78.0" prefWidth="278.0" styleClass="Polynomials" stylesheets="@WindowStyle.css" />
+      <TextField fx:id="result" editable="false" layoutX="319.0" layoutY="291.0" prefHeight="78.0" prefWidth="296.0" styleClass="Polynomials" stylesheets="@WindowStyle.css" text="R:" />
+      <GridPane layoutX="39.0" layoutY="114.0" prefHeight="272.0" prefWidth="228.0" styleClass="Operations" stylesheets="@WindowStyle.css">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="plus" fitHeight="47.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../add.png" />
+               </image></ImageView>
+            <ImageView fx:id="minus" fitHeight="45.0" fitWidth="37.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../../minus-sign.png" />
+               </image></ImageView>
+            <ImageView fx:id="multiply" fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../medical-symbol.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="division" fitHeight="41.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../forward.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="integral" fitHeight="63.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../integral.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals" fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../equal-mathematical-sign.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clear" fitHeight="64.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../letter-c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="derivative" fitHeight="51.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../math.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <TextField fx:id="polynomial2" layoutX="319.0" layoutY="22.0" prefHeight="78.0" prefWidth="278.0" styleClass="Polynomials" stylesheets="@WindowStyle.css" />
+      <Text fontSmoothingType="LCD" layoutX="353.0" layoutY="189.0" opacity="0.7" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Polynomial Calculator" textAlignment="CENTER" wrappingWidth="228.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16993075609207153" green="0.05634746700525284" blue="0.32894736528396606" opacity="0.8399999737739563" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.23520000278949738" green="0.4771200120449066" blue="0.8399999737739563" opacity="0.7577489018440247" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
